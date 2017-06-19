@@ -22,8 +22,6 @@ class UserSelectFieldPlugin(Component):
         ctw = ConfigurableTicketWorkflow(self.env)
         ctw._to_users = self.patched_to_users
 
-        pass
-
     def match_request(self, req):
         return False
 
@@ -65,7 +63,6 @@ class UserSelectFieldPlugin(Component):
         @cached
         def custom_fields(self):
             """Return the list of custom ticket fields available for tickets."""
-            print "custom_fields"
             fields = TicketFieldList()
             config = self.ticket_custom_section
             for name in [option for option, value in config.options()
