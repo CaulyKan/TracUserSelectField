@@ -22,8 +22,6 @@ class UserSelectFieldPlugin(Component):
         ctw = ConfigurableTicketWorkflow(self.env)
         ctw._to_users = self.patched_to_users
 
-        pass
-
     def match_request(self, req):
         return False
 
