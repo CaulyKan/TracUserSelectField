@@ -8,14 +8,14 @@
 
 
 '''
-Created on 2014-03-12 
+Created on 2014-03-12
 
 @author: cauly
 '''
 from setuptools import find_packages, setup
 
 setup(
-    name='TracUserSelectFieldPlugin', version='1.0',
+    name='TracUserSelectFieldPlugin', version='1.1',
     packages=find_packages(exclude=['*.tests*']),
     license = "BSD 3-Clause",
     author_email='cauliflower.kan@gmail.com',

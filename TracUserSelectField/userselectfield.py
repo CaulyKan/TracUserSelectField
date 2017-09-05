@@ -1,12 +1,9 @@
 # -*- coding: utf8 -*-
 
-from trac import util
 from trac.core import *
 from trac.ticket import TicketSystem, TicketFieldList
 from trac.cache import cached
 from trac.perm import PermissionSystem, PermissionCache
-from tracrpc.ticket import TicketRPC
-from trac.config import ConfigSection, ListOption
 from trac.web import IRequestHandler
 from trac.ticket.default_workflow import ConfigurableTicketWorkflow
 
@@ -125,5 +122,3 @@ class UserSelectFieldPlugin(Component):
             append_owners(users_perms_and_groups)
 
             return sorted(owners)
-
-
